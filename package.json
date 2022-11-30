@@ -105,6 +105,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@types/keyv": "^4.2.0"
+    "keyv": "^4.5.2"
   }
 }
