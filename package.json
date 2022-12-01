@@ -5,6 +5,9 @@
   "react-native": "src/index",
   "source": "src/index",
   "types": "src/index.d.ts",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
   "files": [
     "src",
     "lib",
@@ -96,15 +99,20 @@
     "trailingComma": "es5",
     "useTabs": false
   },
-  "@react-native-community/bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+  "react-native-builder-bob": {
+  "source": "src",
+  "output": "lib",
+  "targets": [
+    ["aar", {"reverseJetify": true}],
+    ["commonjs", {"copyFlow": true}],
+    "module",
+    "typescript",
+    ]
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@types/keyv": "3.1.2"
+    "@types/keyv": "^4.2.0"
   }
 }
