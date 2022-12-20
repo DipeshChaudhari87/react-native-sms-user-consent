@@ -99,8 +99,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@keyvhq/core": "^1.6.14"
   }
 }
